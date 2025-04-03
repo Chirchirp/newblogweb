@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore the latest insights and trends in data analytics." />
+  <meta name="keywords" content="Data Analytics, Data Insights, Blogs, Trends" />
+  <title>Data Analyst Blog</title>
+  
+  <!-- Tailwind CSS with Inter Font -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+  <!-- Header -->
+  <header>
+    <nav>
+      <div class="logo">Pharaoh</div>
+      <div class="nav-links">
+        <a href="#home" class="hover-underline">Home</a>
+        <a href="#blog" class="hover-underline">Portfolio</a>
+        <a href="#about" class="hover-underline">About</a>
+        <a href="#contact" class="hover-underline">Contact</a>
+      </div>
+      <div class="mobile-toggle" onclick="toggleMenu()">☰</div>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#home" class="hover-underline">Home</a>
+      <a href="#blog" class="hover-underline">Portfolio</a>
+      <a href="#about" class="hover-underline">About</a>
+      <a href="#contact" class="hover-underline">Contact</a>
+    </div>
+  </header>
+
+        <!-- Mobile Menu Button -->
+        <button id="menu-btn" class="md:hidden p-2 rounded-lg hover:bg-gray-100">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Navigation -->
+      <div id="mobile-menu" class="mobile-menu md:hidden">
+        <ul class="py-4 space-y-4">
+          <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 rounded-lg">Home</a></li>
+          <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 rounded-lg">Portfolio</a></li>
+          <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 rounded-lg">About</a></li>
+          <li><a href="#" class="block px-4 py-2 text-gray-700 hover:bg-blue-50 rounded-lg">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-blue-600" id="home">
+    <h1 class="hero-title dynamic-bounce">Welcome to my Data Analytics Insights Blog</h1>
+    <p class="hero-subtitle">Insights, stories, and updates from the digital frontier.</p>
+    <a href="#" class="inline-block bg-white text-blue-600 px-8 py-4 rounded-xl font-semibold hover:bg-opacity-90 transition-all transform hover:scale-105 shadow-lg">
+      Explore Insights →
+    </a>
+  </section>
+
+    <!-- Blog Section -->
+    <section class="container mx-auto py-12 px-4">
+      <h2 class="text-3xl font-bold text-center mb-6">Latest Blogs</h2>
+      <div id="blog-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Blog posts will be dynamically inserted here -->
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+   <footer role="contentinfo">
+    <nav>
+      <a>&copy; 2025 Data Insights Blog. All rights reserved.</a>
+      <a href="#" class="footer-link" data-modal="modal-privacy">Privacy Policy</a>
+      <a href="#" class="footer-link" data-modal="modal-terms">Terms of Service</a>
+    </nav>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="scripts/script.js" defer></script>
+</body>
+</html>
